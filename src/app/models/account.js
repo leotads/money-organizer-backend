@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
   const Account = sequelize.define('Account', {
     name: DataTypes.STRING,
     userId: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {         // User belongsTo Company 1:1
         model: 'User',
